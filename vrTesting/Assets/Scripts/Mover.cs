@@ -2,14 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mover : MonoBehaviour {
+public class Mover : MonoBehaviour
+{
 
     public RailPoint railPoints;
 
     int currentSeg;
-    float Transition;
+    float transition;
     bool isCompleted = false;
-    float speed = 2;
+    float speed = 1;
 
     void Update()
     {
@@ -22,30 +23,44 @@ public class Mover : MonoBehaviour {
         {
             MoveObject();
         }
-
-
-
     }
 
     void MoveObject()
     {
-        Transition += Time.deltaTime * 1 / speed;
 
-        if (Transition > 1)
+        
+        
+        transition += Time.deltaTime/speed;
+
+        if (transition > 1)
         {
-            Transition = 0;
+            transition = 0;
             currentSeg++;
         }
-        else if (Transition < 0)
+        else if (transition < 0)
         {
-            Transition = 1;
+            transition = 1;
             currentSeg--;
         }
-        transform.position = railPoints.Position(currentSeg, Transition);
 
-        if (transform.position == railPoints.lastNode.position)
+        //if (currentTime > totalTime)
+        //{
+        //    Transition = 0;
+        //    currentSeg++;
+        //}
+        //else if (currentTime < totalTime)
+        //{
+        //    Transition = 1;
+        //    currentSeg--;
+        //}
+
+        
+        transform.position = railPoints.Position(currentSeg, transition);
+
+        if (railPoints.p1 == railPoints.lastNode)
         {
             isCompleted = true;
+            transform.position = railPoints.lastNode;
         }
     }
 }
