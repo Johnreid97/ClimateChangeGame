@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+//using UnityEditor;
 
 [ExecuteInEditMode]
 public class RailPoint : MonoBehaviour
@@ -80,7 +80,7 @@ public class RailPoint : MonoBehaviour
     {
         for (int i = 1; i < nodes.Length - 1; i++)
         {
-            Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
+           // Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
         }
     }
 
