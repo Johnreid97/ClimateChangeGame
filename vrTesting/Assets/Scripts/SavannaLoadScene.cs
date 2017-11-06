@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SavannaLoadScene : MonoBehaviour {
-    float timeUntilNextScene = 30.0f;
+    float timeUntilNextScene = 172f;
     // Use this for initialization
     void Start () {
 		
