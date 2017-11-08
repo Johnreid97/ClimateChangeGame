@@ -9875,13 +9875,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!81 &2074841094
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2074841078}
-  m_Enabled: 1
 --- !u!82 &2074841095
 AudioSource:
   m_ObjectHideFlags: 0
