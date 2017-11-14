@@ -996,7 +996,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1535245329}
-          m_MethodName: PointerEnter
+          m_MethodName: LookingAt
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1013,7 +1013,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1535245329}
-          m_MethodName: PointerExit
+          m_MethodName: LookingAway
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1294,18 +1294,6 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1938363207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1938363204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a514941813e0724c90cb2d73541fcb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  railPoints: {fileID: 1301118872}
 --- !u!1 &2107632558
 GameObject:
   m_ObjectHideFlags: 0

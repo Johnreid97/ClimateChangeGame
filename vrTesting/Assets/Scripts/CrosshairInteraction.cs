@@ -9,6 +9,8 @@ public class CrosshairInteraction : MonoBehaviour {
     public float timer;
     bool staring = false;
     Coroutine objectLoading;
+    string tag;
+    
     // Use this for initialization
     void Start () {
 		
@@ -17,30 +19,21 @@ public class CrosshairInteraction : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        timer += Time.deltaTime;
+        
         
 
     }
     
-    //public void DeleteCube()
-    //{
-    //    if (staring)
-    //    {
-    //        Destroy(this.gameObject);
-    //        print("Working");
-            
-    //    }
-
-        
-    //}
-    public void PointerEnter()
+    
+    public void LookingAt()
     {
         staring = true;
-        objectLoading = StartCoroutine(LoadingObject());
+        tag = gameObject.tag; 
+        objectLoading = StartCoroutine(TriggerSomething());
             
     }
 
-    public void PointerExit()
+    public void LookingAway()
     {
        
         if (objectLoading != null)
@@ -52,7 +45,7 @@ public class CrosshairInteraction : MonoBehaviour {
     }
 
 
-    public IEnumerator LoadingObject()
+    public IEnumerator TriggerSomething()
     {
         timer = 0f;
 
@@ -63,7 +56,17 @@ public class CrosshairInteraction : MonoBehaviour {
             yield return null;
             if (timer > loadingTime )
             {
-                Destroy(this.gameObject);
+                switch (tag)
+                {
+                    case "Carcass":
+                        Destroy(this.gameObject);
+                        break;
+                    case "Bird":
+                        break;
+                    case "RainforestUI":
+                        break;
+                }
+                
             }
         }
 
