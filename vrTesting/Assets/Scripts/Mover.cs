@@ -27,8 +27,6 @@ public class Mover : MonoBehaviour
 
     void MoveObject()
     {
-
-        
         
         transition += Time.deltaTime/speed;
 
