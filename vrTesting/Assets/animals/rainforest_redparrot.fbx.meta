@@ -1,16 +1,28 @@
 fileFormatVersion: 2
-guid: 2b06a44b7f37e1b47abf10b5e8b1bb91
-timeCreated: 1511099699
+guid: 90ade45f3728e5b47b44049b48146576
+timeCreated: 1511263191
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: rainforest_distanttree_backgound
+    100000: body_root
+    100002: l_shouldel_joint_01
+    100004: l_wing_joint_01
+    100006: parrot_body
+    100008: r_shoulder_joint_01
+    100010: r_wing_joint_01
+    100012: //RootNode
+    400000: body_root
+    400002: l_shouldel_joint_01
+    400004: l_wing_joint_01
+    400006: parrot_body
+    400008: r_shoulder_joint_01
+    400010: r_wing_joint_01
+    400012: //RootNode
+    4300000: parrot_body
+    7400000: Take 001
     9500000: //RootNode
+    13700000: parrot_body
   materials:
     importMaterials: 1
     materialName: 0
