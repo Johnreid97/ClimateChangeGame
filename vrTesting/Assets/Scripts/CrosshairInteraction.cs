@@ -11,6 +11,7 @@ public class CrosshairInteraction : MonoBehaviour {
     bool staring = false;
     Coroutine objectLoading;
     string tag;
+    public Animator animator;
     
     // Use this for initialization
     void Start () {
@@ -30,8 +31,9 @@ public class CrosshairInteraction : MonoBehaviour {
     {
         staring = true;
         tag = gameObject.tag; 
+        
         objectLoading = StartCoroutine(TriggerSomething());
-            
+        
     }
 
     public void LookingAway()
@@ -62,7 +64,8 @@ public class CrosshairInteraction : MonoBehaviour {
                     case "Carcass":
                         Destroy(this.gameObject);
                         break;
-                    case "Bird":
+                    case "Parrot":
+                        animator.SetBool("FlyingBool", true);
                         break;
                     case "RainforestUI":
                         break;
