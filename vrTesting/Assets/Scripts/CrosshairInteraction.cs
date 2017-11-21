@@ -62,7 +62,7 @@ public class CrosshairInteraction : MonoBehaviour {
                     case "Carcass":
                         Destroy(this.gameObject);
                         break;
-                    case "Bird":
+                    case "Toucan":
                         break;
                     case "RainforestUI":
                         break;
@@ -72,6 +72,9 @@ public class CrosshairInteraction : MonoBehaviour {
                     case "SceneSkip2":
                         SceneManager.LoadScene("Rainforest", LoadSceneMode.Single);
                         break;
+                    case "Parrot":
+                        break;
+               
                 }
                 
             }
