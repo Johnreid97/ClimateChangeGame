@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CrosshairInteraction : MonoBehaviour {
 
@@ -64,6 +65,12 @@ public class CrosshairInteraction : MonoBehaviour {
                     case "Bird":
                         break;
                     case "RainforestUI":
+                        break;
+                    case "SceneSkip":
+                        SceneManager.LoadScene("Savannah", LoadSceneMode.Single);
+                        break;
+                    case "SceneSkip2":
+                        SceneManager.LoadScene("Rainforest", LoadSceneMode.Single);
                         break;
                 }
                 
