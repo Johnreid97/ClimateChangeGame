@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2b06a44b7f37e1b47abf10b5e8b1bb91
-timeCreated: 1511099699
+guid: f83dd7b04bf2d6848800e987185595c6
+timeCreated: 1511263699
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: rainforest_distanttree_backgound
+    4300000: rainforest_distanttree_middlegound
     9500000: //RootNode
   materials:
     importMaterials: 1
