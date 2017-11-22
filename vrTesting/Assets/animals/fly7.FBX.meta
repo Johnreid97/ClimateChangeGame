@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f1ae2486e4de53c4ba8d4ca6114ded38
-timeCreated: 1511273550
+guid: 99bad9044ecaf424f87e5fc693ec44b3
+timeCreated: 1511366363
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: fly2
+    4300000: fly4
     7400000: Take 001
     9500000: //RootNode
   materials:
