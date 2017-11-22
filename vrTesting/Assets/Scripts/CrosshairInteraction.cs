@@ -12,7 +12,8 @@ public class CrosshairInteraction : MonoBehaviour {
     Coroutine objectLoading;
     string tag;
     public Animator animator, animator2, animator3, animator4, animator5;
-    
+    public Mover mover;
+
     
     // Use this for initialization
     void Start () {
@@ -71,6 +72,7 @@ public class CrosshairInteraction : MonoBehaviour {
                         break;
                     case "Parrot":
                         animator.SetBool("FlyingBool", true);
+                        mover.DeclareCoroutine();
                         break;
                     case "RainforestUI":
                         break;

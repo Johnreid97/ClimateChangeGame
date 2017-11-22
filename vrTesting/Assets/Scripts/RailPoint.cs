@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using UnityEditor;
+using UnityEditor;
 
 [ExecuteInEditMode]
 public class RailPoint : MonoBehaviour
@@ -38,49 +38,22 @@ public class RailPoint : MonoBehaviour
 
     }
 
-    public Vector3 Position(int whatLine, float whereOnLine)
+    public Vector3 Position(int currentLine, float whereOnLine)
     {
         
-        p1 = nodes[whatLine ].position;
-       p2 = nodes[whatLine + 1].position;
+       p1 = nodes[currentLine ].position;
+       p2 = nodes[currentLine + 1].position;
        
-            return Vector3.Lerp(p1, p2, whereOnLine);
-        
-       
-
-       
-
-        
-        
+        return Vector3.Lerp(p1, p2, whereOnLine);
+   
     }
 
-    //  public  IEnumerator Lerp()
-    //{
-    //    isTravelling = true;
-    //    float totalTime = 10;
-    //    float currentTime = 0;
-    //    Vector3 currentPosition = transform.position;
-        
-    //    while (currentTime < totalTime && isTravelling)
-    //    {
-    //        currentTime += Time.deltaTime;
-    //        transform.position = Vector3.Lerp(p1, p2, currentTime/totalTime);
-    //    }
-    //    if (currentTime >= totalTime)
-    //        isTravelling = false;
-
-    //    yield return 0;
-
-    //}
-
-
-
-
+    
     void OnDrawGizmos()
     {
         for (int i = 1; i < nodes.Length - 1; i++)
         {
-           // Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
+           Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
         }
     }
 
