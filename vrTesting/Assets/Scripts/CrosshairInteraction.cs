@@ -72,7 +72,7 @@ public class CrosshairInteraction : MonoBehaviour {
                         break;
                     case "Parrot":
                         animator.SetBool("FlyingBool", true);
-                        mover.DeclareCoroutine();
+                        mover.isCompleted = false;
                         break;
                     case "RainforestUI":
                         break;

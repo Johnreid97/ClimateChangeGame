@@ -8,70 +8,28 @@ public class Mover : MonoBehaviour
     public RailPoint railPoints;
 
     int currentSeg;
-    float transition;
-   public bool isCompleted = true;
+    public float transition;
+    public bool isCompleted = true;
     float speed = 1;
 
     public Coroutine startMoving;
-    
-    //void Update()
-    //{
-    //    if (!railPoints)
-    //    {
-    //        return;
-    //    }
 
-    //    if (isCompleted == false)
-    //    {
-    //        MoveObject();
-    //    }
-    //}
-
-    //void MoveObject()
-    //{
-        
-    //    transition += Time.deltaTime/speed;
-
-    //    if (transition > 1)
-    //    {
-    //        transition = 0;
-    //        currentSeg++;
-    //    }
-    //    else if (transition < 0)
-    //    {
-    //        transition = 1;
-    //        currentSeg--;
-    //    }
-
-    //    //if (currentTime > totalTime)
-    //    //{
-    //    //    Transition = 0;
-    //    //    currentSeg++;
-    //    //}
-    //    //else if (currentTime < totalTime)
-    //    //{
-    //    //    Transition = 1;
-    //    //    currentSeg--;
-    //    //}
-
-        
-    //    transform.position = railPoints.Position(currentSeg, transition);
-
-    //    if (railPoints.p1 == railPoints.lastNode)
-    //    {
-    //        isCompleted = true;
-    //        transform.position = railPoints.lastNode;
-    //    }
-    //}
-
-        public void DeclareCoroutine()
+    void Update()
     {
-        startMoving = StartCoroutine(StartMoving());
+        if (!railPoints)
+        {
+            return;
+        }
+
+        if (isCompleted == false)
+        {
+            MoveObject();
+        }
     }
 
-    public IEnumerator StartMoving()
+    void MoveObject()
     {
-        
+
         transition += Time.deltaTime / speed;
 
         if (transition > 1)
@@ -84,15 +42,58 @@ public class Mover : MonoBehaviour
             transition = 1;
             currentSeg--;
         }
+
+        //if (currentTime > totalTime)
+        //{
+        //    Transition = 0;
+        //    currentSeg++;
+        //}
+        //else if (currentTime < totalTime)
+        //{
+        //    Transition = 1;
+        //    currentSeg--;
+        //}
+
+
         transform.position = railPoints.Position(currentSeg, transition);
 
         if (railPoints.p1 == railPoints.lastNode)
         {
             isCompleted = true;
-            transform.position = railPoints.lastNode;
-            StopCoroutine(startMoving); 
-            yield break;
+            //transform.position = railPoints.lastNode;
+            Destroy(gameObject);
         }
-        yield return null;
     }
+
+    //public void DeclareCoroutine()
+    //{
+    //    startMoving = StartCoroutine(StartMoving());
+    //}
+
+    //public IEnumerator StartMoving()
+    //{
+
+    //   transition += Time.deltaTime / speed;
+
+    //    if (transition > 1)
+    //    {
+    //        transition = 0;
+    //        currentSeg++;
+    //    }
+    //    else if (transition < 0)
+    //    {
+    //        transition = 1;
+    //        currentSeg--;
+    //    }
+    //    transform.position = railPoints.Position(currentSeg, transition);
+
+    //    if (railPoints.p1 == railPoints.lastNode)
+    //    {
+    //        isCompleted = true;
+    //        transform.position = railPoints.lastNode;
+    //         StopCoroutine(startMoving);
+    //        yield break;
+    //    }
+    //    //yield return null;
+    //}
 }

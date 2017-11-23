@@ -1,7 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR 
 using UnityEditor;
+#endif
+
+
 
 [ExecuteInEditMode]
 public class RailPoint : MonoBehaviour
@@ -25,37 +29,37 @@ public class RailPoint : MonoBehaviour
     void Start()
     {
         nodes = GetComponentsInChildren<Transform>();
-        lastNode = nodes[nodes.Length - 2].position ;
+        lastNode = nodes[nodes.Length - 2].position;
         //p1 = nodes[whatLine + 1].position;
         //p2 = nodes[whatLine + 2].position;
         //StartCoroutine(Lerp());
 
     }
 
-     void Update()
+    void Update()
     {
-      
+
 
     }
 
     public Vector3 Position(int currentLine, float whereOnLine)
     {
-        
-       p1 = nodes[currentLine ].position;
-       p2 = nodes[currentLine + 1].position;
-       
+
+        p1 = nodes[currentLine + 1].position;
+        p2 = nodes[currentLine + 2].position;
+
         return Vector3.Lerp(p1, p2, whereOnLine);
-   
+
     }
 
-    
+#if UNITY_EDITOR
     void OnDrawGizmos()
     {
         for (int i = 1; i < nodes.Length - 1; i++)
         {
-           Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
+            Handles.DrawDottedLine(nodes[i].position, nodes[i + 1].position, 3.0f);
         }
     }
-
+#endif
 }
 
