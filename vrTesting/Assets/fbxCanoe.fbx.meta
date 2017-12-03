@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 7c9f038b61f465f4c932c08a27017fb9
-timeCreated: 1510677925
+guid: f992fffbda1cdfb49856d33bf35bac51
+timeCreated: 1512323241
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -9,8 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: polySurface246
-    4300002: ssx
+    4300000: pSphere1
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -35,11 +34,11 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     clipAnimations: []
-    isReadable: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
-    meshCompression: 3
+    meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
     swapUVChannels: 0
@@ -76,7 +75,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
