@@ -8,6 +8,11 @@ TagManager:
   - SceneSkip
   - SceneSkip2
   - Parrot
+  - Sound2
+  - Sound3
+  - Sound4
+  - Sound5
+  - Sound6
   layers:
   - Default
   - TransparentFX
