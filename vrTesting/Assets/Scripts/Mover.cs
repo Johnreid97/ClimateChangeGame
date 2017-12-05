@@ -9,7 +9,7 @@ public class Mover : MonoBehaviour
 
     int currentSeg;
     public float transition;
-    public bool isCompleted = true;
+    public bool isCompleted = false;
     float speed = 1;
 
     public Coroutine startMoving;
@@ -57,10 +57,10 @@ public class Mover : MonoBehaviour
 
         transform.position = railPoints.Position(currentSeg, transition);
 
-        if (railPoints.p1 == railPoints.lastNode)
+        if (railPoints.p1 == railPoints.firstNode)
         {
-            isCompleted = true;
-            //transform.position = railPoints.lastNode;
+            isCompleted = false;
+            transform.position = railPoints.firstNode;
             Destroy(gameObject);
         }
     }

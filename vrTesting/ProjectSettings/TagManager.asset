@@ -13,6 +13,7 @@ TagManager:
   - Sound4
   - Sound5
   - Sound6
+  - Person
   layers:
   - Default
   - TransparentFX

@@ -1,17 +1,30 @@
 fileFormatVersion: 2
-guid: 99bad9044ecaf424f87e5fc693ec44b3
-timeCreated: 1511366363
+guid: 527a4cadcd8d57e4f898f61ef0cb87a1
+timeCreated: 1512476492
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
+    100002: joint1
+    100004: joint2
+    100006: joint3
+    100008: joint4
+    100010: pCube1
+    100012: polySurface1
+    100014: polySurface3
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: fly4
+    400002: joint1
+    400004: joint2
+    400006: joint3
+    400008: joint4
+    400010: pCube1
+    400012: polySurface1
+    400014: polySurface3
+    4300000: polySurface3
     7400000: Take 001
     9500000: //RootNode
+    13700000: polySurface3
   materials:
     importMaterials: 1
     materialName: 0
@@ -34,7 +47,51 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: joint4
+        weight: 1
+      - path: joint4/joint1
+        weight: 1
+      - path: joint4/joint1/joint2
+        weight: 1
+      - path: joint4/joint1/joint2/joint3
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCube1/polySurface1
+        weight: 1
+      - path: pCube1/polySurface1/polySurface3
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

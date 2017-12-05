@@ -83,24 +83,27 @@ public class CrosshairInteraction : MonoBehaviour {
                     case "SceneSkip2":
                         SceneManager.LoadScene("Rainforest", LoadSceneMode.Single);
                         break;
+                    case "Person":
+                        animator.SetBool("Walking", true);
+                        break;
                     case "Sound2":
-                        if(isPlaying = false)
+                        if(isPlaying == false)
                         sound2.Play();
                         break;
                     case "Sound3":
-                        if (isPlaying = false)
+                        if (isPlaying == false)
                             sound3.Play();
                         break;
                     case "Sound4":
-                        if (isPlaying = false)
+                        if (isPlaying == false)
                             sound4.Play();
                         break;
                     case "Sound5":
-                        if (isPlaying = false)
+                        if (isPlaying == false)
                             sound5.Play();
                         break;
                     case "Sound6":
-                        if (isPlaying = false)
+                        if (isPlaying == false)
                             sound6.Play();
                         break;
                 }
