@@ -11,6 +11,7 @@ public class Mover : MonoBehaviour
     public float transition;
     public bool isCompleted = false;
     float speed = 1;
+    
 
     public Coroutine startMoving;
 
@@ -43,57 +44,15 @@ public class Mover : MonoBehaviour
             currentSeg--;
         }
 
-        //if (currentTime > totalTime)
-        //{
-        //    Transition = 0;
-        //    currentSeg++;
-        //}
-        //else if (currentTime < totalTime)
-        //{
-        //    Transition = 1;
-        //    currentSeg--;
-        //}
-
-
         transform.position = railPoints.Position(currentSeg, transition);
 
-        if (railPoints.p1 == railPoints.firstNode)
+        if (railPoints.p1 == railPoints.lastNode || railPoints.p2 == railPoints.lastNode)
         {
-            isCompleted = false;
-            transform.position = railPoints.firstNode;
-            Destroy(gameObject);
+            isCompleted = true;
+            transform.position = transform.position;
+            //Destroy(gameObject);
         }
     }
 
-    //public void DeclareCoroutine()
-    //{
-    //    startMoving = StartCoroutine(StartMoving());
-    //}
-
-    //public IEnumerator StartMoving()
-    //{
-
-    //   transition += Time.deltaTime / speed;
-
-    //    if (transition > 1)
-    //    {
-    //        transition = 0;
-    //        currentSeg++;
-    //    }
-    //    else if (transition < 0)
-    //    {
-    //        transition = 1;
-    //        currentSeg--;
-    //    }
-    //    transform.position = railPoints.Position(currentSeg, transition);
-
-    //    if (railPoints.p1 == railPoints.lastNode)
-    //    {
-    //        isCompleted = true;
-    //        transform.position = railPoints.lastNode;
-    //         StopCoroutine(startMoving);
-    //        yield break;
-    //    }
-    //    //yield return null;
-    //}
+   
 }

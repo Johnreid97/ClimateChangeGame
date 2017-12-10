@@ -13,7 +13,7 @@ public class RailPoint : MonoBehaviour
 
 
     public Transform[] nodes;
-    public Vector3 firstNode;
+    public Vector3 lastNode;
 
     public GameObject beingMoved;
     //int whatLine;
@@ -29,10 +29,8 @@ public class RailPoint : MonoBehaviour
     void Start()
     {
         nodes = GetComponentsInChildren<Transform>();
-        firstNode = nodes[nodes.Length + 1].position;
-        //p1 = nodes[whatLine + 1].position;
-        //p2 = nodes[whatLine + 2].position;
-        //StartCoroutine(Lerp());
+        lastNode = nodes[nodes.Length -2].position;
+        
 
     }
 
@@ -45,10 +43,10 @@ public class RailPoint : MonoBehaviour
     public Vector3 Position(int currentLine, float whereOnLine)
     {
 
-        p1 = nodes[currentLine + 1].position;
-        p2 = nodes[currentLine + 2].position;
+            p1 = nodes[currentLine + 1].position;
+            p2 = nodes[currentLine + 2].position;
 
-        return Vector3.Lerp(p1, p2, whereOnLine);
+            return Vector3.Lerp(p1, p2, whereOnLine);
 
     }
 
