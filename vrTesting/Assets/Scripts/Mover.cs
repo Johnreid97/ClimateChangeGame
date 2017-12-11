@@ -46,11 +46,13 @@ public class Mover : MonoBehaviour
 
         transform.position = railPoints.Position(currentSeg, transition);
 
-        if (railPoints.node1 == railPoints.lastNode || railPoints.node2 == railPoints.lastNode)
+        if (railPoints.node1 == railPoints.lastNode )
         {
-            isCompleted = true;
-            transform.position = transform.position;
+            Debug.Log("Working");
             Destroy(gameObject);
+            isCompleted = true;
+            
+            
         }
     }
 

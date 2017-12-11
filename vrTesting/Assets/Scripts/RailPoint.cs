@@ -43,8 +43,8 @@ public class RailPoint : MonoBehaviour
     public Vector3 Position(int currentLine, float whereOnLine)
     {
 
-            node1 = nodes[currentLine + 1].position;
-            node2 = nodes[currentLine + 2].position;
+            node1 = nodes[currentLine].position;
+            node2 = nodes[currentLine + 1].position;
 
             return Vector3.Lerp(node1, node2, whereOnLine);
 

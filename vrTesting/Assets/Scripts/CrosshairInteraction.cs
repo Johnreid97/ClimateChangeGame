@@ -16,6 +16,7 @@ public class CrosshairInteraction : MonoBehaviour {
     Audio audio;
     
     
+    
     // Use this for initialization
     void Start () {
         audio = GetComponent<Audio>();
@@ -93,7 +94,9 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip;
                             audio.audioSource.Play();
+                            audio.halo.enabled = false;
                         }
+                        
 
                         break;
                     case "Sound3":
@@ -101,6 +104,8 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip2;
                             audio.audioSource.Play();
+                            
+                            audio.halo2.enabled = false;
                         }
                         break;
                     case "Sound4":
@@ -108,6 +113,8 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip3;
                             audio.audioSource.Play();
+                          
+                            audio.halo3.enabled = false;
                         }
                         break;
                     case "Sound5":
@@ -115,13 +122,17 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip4;
                             audio.audioSource.Play();
+                            audio.halo4.enabled = false;
+                            
                         }
                         break;
                     case "Sound6":
                         if (!audio.isPlaying && audio.soundCounter == 5)
                         {
                             audio.audioSource.clip = audio.audioClip5;
-                            audio.audioSource.Play();   
+                            audio.audioSource.Play();
+                           
+                            audio.halo5.enabled = false;
                         }
                         break;
                 }

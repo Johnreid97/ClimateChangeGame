@@ -4022,7 +4022,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4e34624575a42d45b0aab78a44748f5, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: e4e34624575a42d45b0aab78a44748f5, type: 3}
       propertyPath: m_LocalScale.y
@@ -4436,6 +4436,22 @@ MonoBehaviour:
   audioClip5: {fileID: 8300000, guid: e431116544be3a3439874a77570683d3, type: 3}
   soundCounter: 0
   isPlaying: 0
+  halo: {fileID: 1806505220}
+  halo2: {fileID: 599328287}
+  halo3: {fileID: 1338092242}
+  halo4: {fileID: 1628588300}
+  halo5: {fileID: 308687425}
+--- !u!122 &308687425
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 308687416}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.5
 --- !u!1001 &311979751
 Prefab:
   m_ObjectHideFlags: 0
@@ -8709,6 +8725,22 @@ MonoBehaviour:
   audioClip5: {fileID: 8300000, guid: e431116544be3a3439874a77570683d3, type: 3}
   soundCounter: 0
   isPlaying: 0
+  halo: {fileID: 1806505220}
+  halo2: {fileID: 599328287}
+  halo3: {fileID: 1338092242}
+  halo4: {fileID: 1628588300}
+  halo5: {fileID: 308687425}
+--- !u!122 &599328287
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 599328278}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.5
 --- !u!1001 &603936891
 Prefab:
   m_ObjectHideFlags: 0
@@ -10857,7 +10889,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 730268166}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 32930471430dd1e4a939f8daa78d74ab, type: 3}
@@ -10937,7 +10969,7 @@ AudioSource:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 730268166}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 9c319490367f11a4f9d648c23675ca7f, type: 3}
@@ -14776,7 +14808,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09bccc7da45d4be4cb7b979873f0d454, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 09bccc7da45d4be4cb7b979873f0d454, type: 3}
       propertyPath: m_LocalScale.x
@@ -15684,7 +15716,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 20ea5c337e095fe45903b2c60dae4d5d, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 20ea5c337e095fe45903b2c60dae4d5d, type: 3}
       propertyPath: m_Name
@@ -20203,6 +20235,22 @@ MonoBehaviour:
   audioClip5: {fileID: 8300000, guid: e431116544be3a3439874a77570683d3, type: 3}
   soundCounter: 0
   isPlaying: 0
+  halo: {fileID: 1806505220}
+  halo2: {fileID: 599328287}
+  halo3: {fileID: 1338092242}
+  halo4: {fileID: 1628588300}
+  halo5: {fileID: 308687425}
+--- !u!122 &1338092242
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1338092233}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.5
 --- !u!1001 &1340212777
 Prefab:
   m_ObjectHideFlags: 0
@@ -23735,6 +23783,22 @@ MonoBehaviour:
   audioClip5: {fileID: 8300000, guid: e431116544be3a3439874a77570683d3, type: 3}
   soundCounter: 0
   isPlaying: 0
+  halo: {fileID: 1806505220}
+  halo2: {fileID: 599328287}
+  halo3: {fileID: 1338092242}
+  halo4: {fileID: 1628588300}
+  halo5: {fileID: 308687425}
+--- !u!122 &1628588300
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1628588291}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.5
 --- !u!1001 &1638759700
 Prefab:
   m_ObjectHideFlags: 0
@@ -26615,12 +26679,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSource: {fileID: 2074841096}
   audioClip: {fileID: 8300000, guid: 6e3696a99050bd64c84b4399b7df4cbd, type: 3}
-  audioClip2: {fileID: 0}
-  audioClip3: {fileID: 0}
-  audioClip4: {fileID: 0}
-  audioClip5: {fileID: 0}
+  audioClip2: {fileID: 8300000, guid: 5d0184a8cda2ee9448427659672a76f0, type: 3}
+  audioClip3: {fileID: 8300000, guid: c92e78e6e8d61a04db9ce50a891a6891, type: 3}
+  audioClip4: {fileID: 8300000, guid: 2cd431a624b46b64a8a257859cefc1cf, type: 3}
+  audioClip5: {fileID: 8300000, guid: e431116544be3a3439874a77570683d3, type: 3}
   soundCounter: 0
   isPlaying: 0
+  halo: {fileID: 1806505220}
+  halo2: {fileID: 599328287}
+  halo3: {fileID: 1338092242}
+  halo4: {fileID: 1628588300}
+  halo5: {fileID: 308687425}
+--- !u!122 &1806505220
+Halo:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1806505211}
+  m_Enabled: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 0.5
 --- !u!4 &1817497258 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 0396b461beb535d4bb431bbcb77911e9, type: 3}

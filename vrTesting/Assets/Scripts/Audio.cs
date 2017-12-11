@@ -8,6 +8,7 @@ public class Audio : MonoBehaviour {
     public AudioClip audioClip, audioClip2, audioClip3, audioClip4, audioClip5;
     public int soundCounter = 0;
     public bool isPlaying = false;
+    public Behaviour halo, halo2, halo3, halo4, halo5;
     
     // Use this for initialization
     void Start() {
@@ -53,29 +54,63 @@ public class Audio : MonoBehaviour {
                 if (!audioSource.isPlaying)
                 {
                     soundCounter = 1;
+                    halo.enabled = true;
                 }
                 break;
             case 1:
-                if (audioSource.isPlaying && audioSource.clip == audioClip)
-                    soundCounter++;
-                
+                if (audioClip != null)
+                {
+                    if (audioSource.isPlaying && audioSource.clip == audioClip)
+                        soundCounter++;
+                }
                 
                 break;
             case 2:
-                if (audioSource.isPlaying && audioSource.clip == audioClip2)
-                    soundCounter++;
+                if (audioClip2 != null)
+                {
+                    if (audioSource.isPlaying && audioSource.clip == audioClip2)
+                    {
+                        soundCounter++;
+
+                    }
+                    halo2.enabled = true;
+                }
+
                 break;
             case 3:
-                if (audioSource.isPlaying && audioSource.clip == audioClip3)
-                    soundCounter++;
+                if (audioClip3 != null)
+                {
+                    if (audioSource.isPlaying && audioSource.clip == audioClip3)
+                    {
+                        soundCounter++;
+
+                    }
+                    halo2.enabled = false;
+                    halo3.enabled = true;
+                }
                 break;
             case 4:
-                if (audioSource.isPlaying && audioSource.clip == audioClip4)
-                    soundCounter++;
+                if (audioClip4 != null)
+                {
+                    if (audioSource.isPlaying && audioSource.clip == audioClip4)
+                    {
+                        soundCounter++;
+                    }
+                    halo3.enabled = false;
+                    halo4.enabled = true;
+                }
                 break;
             case 5:
-                if (audioSource.isPlaying && audioSource.clip == audioClip5)
-                    soundCounter++;
+                if (audioClip5 != null)
+                {
+                    if (audioSource.isPlaying && audioSource.clip == audioClip5)
+                    {
+                        soundCounter++;
+
+                    }
+                    halo4.enabled = false;
+                    halo5.enabled = true;
+                }
                 break;
         }
     }
