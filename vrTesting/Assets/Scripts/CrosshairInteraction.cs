@@ -67,13 +67,7 @@ public class CrosshairInteraction : MonoBehaviour {
             {
                 switch (tag)
                 {
-                    case "Carcass":
-                        animator.SetBool("Fly1", true);
-                        animator2.SetBool("Fly2", true);
-                        animator3.SetBool("Fly3", true);
-                        animator4.SetBool("Fly4", true);
-                        animator5.SetBool("Fly5", true);
-                        break;
+                  
                     case "Parrot":
                         animator.SetBool("FlyingBool", true);
                         break;
