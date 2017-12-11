@@ -1,20 +1,22 @@
 fileFormatVersion: 2
-guid: 35b30c66a05be0d469f17d3ebd87bb5e
-timeCreated: 1512923889
+guid: 90fbb9cd972600546872a53e33bb96ba
+timeCreated: 1512944969
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: pCylinder1
-    400000: //RootNode
-    400002: pCylinder1
-    2300000: //RootNode
-    2300002: pCylinder1
-    3300000: //RootNode
-    3300002: pCylinder1
-    4300000: pSphere1
-    4300002: pCylinder1
+    100000: Blade
+    100002: //RootNode
+    100004: Tower
+    400000: Blade
+    400002: //RootNode
+    400004: Tower
+    2300000: Blade
+    2300002: Tower
+    3300000: Blade
+    3300002: Tower
+    4300000: Tower
+    4300002: Blade
     7400000: Take 001
     9500000: //RootNode
   materials:
@@ -39,7 +41,41 @@ ModelImporter:
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 90
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Blade
+        weight: 1
+      - path: Tower
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []

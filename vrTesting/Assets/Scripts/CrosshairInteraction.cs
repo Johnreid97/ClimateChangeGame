@@ -93,7 +93,6 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip;
                             audio.audioSource.Play();
-                            
                         }
 
                         break;
@@ -102,8 +101,6 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip2;
                             audio.audioSource.Play();
-
-
                         }
                         break;
                     case "Sound4":
@@ -111,8 +108,6 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip3;
                             audio.audioSource.Play();
-
-
                         }
                         break;
                     case "Sound5":
@@ -120,17 +115,13 @@ public class CrosshairInteraction : MonoBehaviour {
                         {
                             audio.audioSource.clip = audio.audioClip4;
                             audio.audioSource.Play();
-
-
                         }
                         break;
                     case "Sound6":
                         if (!audio.isPlaying && audio.soundCounter == 5)
                         {
                             audio.audioSource.clip = audio.audioClip5;
-                            audio.audioSource.Play();
-
-
+                            audio.audioSource.Play();   
                         }
                         break;
                 }
