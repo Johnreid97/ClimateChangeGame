@@ -14,6 +14,7 @@ TagManager:
   - Sound5
   - Sound6
   - Person
+  - Parrot2
   layers:
   - Default
   - TransparentFX

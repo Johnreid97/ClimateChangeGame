@@ -19,8 +19,8 @@ public class RailPoint : MonoBehaviour
     //int whatLine;
     //float whereOnLine;
 
-    public Vector3 p1;
-    public Vector3 p2;
+    public Vector3 node1;
+    public Vector3 node2;
     bool isTravelling;
     Quaternion q1;
     Quaternion q2;
@@ -29,7 +29,7 @@ public class RailPoint : MonoBehaviour
     void Start()
     {
         nodes = GetComponentsInChildren<Transform>();
-        lastNode = nodes[nodes.Length -2].position;
+        lastNode = nodes[nodes.Length -1].position;
         
 
     }
@@ -43,10 +43,10 @@ public class RailPoint : MonoBehaviour
     public Vector3 Position(int currentLine, float whereOnLine)
     {
 
-            p1 = nodes[currentLine + 1].position;
-            p2 = nodes[currentLine + 2].position;
+            node1 = nodes[currentLine + 1].position;
+            node2 = nodes[currentLine + 2].position;
 
-            return Vector3.Lerp(p1, p2, whereOnLine);
+            return Vector3.Lerp(node1, node2, whereOnLine);
 
     }
 

@@ -12,7 +12,7 @@ public class CrosshairInteraction : MonoBehaviour {
     Coroutine objectLoading;
     string tag;
     public Animator animator, animator2, animator3, animator4, animator5;
-    public Mover mover;
+    public Mover mover, mover2;
     Audio audio;
     
     
@@ -75,9 +75,9 @@ public class CrosshairInteraction : MonoBehaviour {
                         break;
                     case "Parrot":
                         animator.SetBool("FlyingBool", true);
-                       
                         break;
-                    case "RainforestUI":
+                    case "Parrot2":
+                        mover2.isCompleted = true;
                         break;
                     case "SceneSkip":
                         SceneManager.LoadScene("Savannah", LoadSceneMode.Single);
