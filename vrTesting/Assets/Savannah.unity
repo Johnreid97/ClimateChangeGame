@@ -5990,7 +5990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa1d75c8f981941873685b3011fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingTime: 3
+  loadingTime: 1
   timer: 0
   animator: {fileID: 0}
   animator2: {fileID: 0}
@@ -9606,7 +9606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa1d75c8f981941873685b3011fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingTime: 3
+  loadingTime: 1
   timer: 0
   animator: {fileID: 0}
   animator2: {fileID: 892943868}
@@ -15980,7 +15980,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccfa1d75c8f981941873685b3011fd22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadingTime: 3
+  loadingTime: 1
   timer: 0
   animator: {fileID: 0}
   animator2: {fileID: 0}
